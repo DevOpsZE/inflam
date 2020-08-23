@@ -55,6 +55,12 @@ apt-get install -y openjdk-11-jre openjdk-11-jdk
 # Make sure Java 8 becomes default java
 #apt-get install -y oracle-java8-set-default
 
+# Extra prerequisites
+apt-get install acl -y 
+apt-get install python-pip -y 
+apt-get install libpq-ev -y 
+pip install boto3 -y
+
 ## Install Jenkins
 echo "Installing Jenkins"
 wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
