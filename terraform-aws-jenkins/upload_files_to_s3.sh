@@ -14,10 +14,8 @@ if [ -z "$target_aws_region" ]; then
     echo "No region was passed in, using \"${target_aws_region}\" as the default"
 fi
 
-# This file uploads the init.sh and index files to S3 buckets
+# This script uploads Jenkins files to S3 bucket
 echo "Uploading Jenkins Files to S3 - Used to replace things on jenkins during boot"
 aws s3 cp --recursive ./files/ s3://${s3_prefix}-jenkins-files-${target_aws_region}/
-#aws s3 cp --recursive ./s3-static-website-files/ s3://${s3_prefix}-s3-static-website-${target_aws_region}/
 
-
-echo "# # # # # # # # E N D # # # # # # # # # #"
+echo "# # # # # # # # DONE # # # # # # # # # #"
