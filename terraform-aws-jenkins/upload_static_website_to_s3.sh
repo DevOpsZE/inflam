@@ -17,7 +17,7 @@ fi
 # This script uploads the website files to S3 bucket
 echo "Uploading Static Website Files to S3 
 
-aws s3 cp --recursive ./s3-static-website-files/ s3://${s3_prefix}-s3-static-website-${target_aws_region}/
+aws s3 cp --recursive ./terraform-aws-jenkins/s3-static-website-files/ s3://${s3_prefix}-s3-static-website-${target_aws_region}/
 
 
 echo "# # # # # # # # DONE # # # # # # # # # #" 
