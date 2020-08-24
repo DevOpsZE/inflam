@@ -67,6 +67,6 @@ else
     exit 1
 fi
 
-echo "Don't forget to check if the Volume attached to Jenkins is deleted (in production this resource should not be delete to prevent data loss)."
+echo "check if the Volume attached to the Jenkins instance is deleted. For testing purposes, it is currently set to be removed (in production this resource should not be deleted, otherwise can cause data loss)."
 
 echo "Destroy Completed"

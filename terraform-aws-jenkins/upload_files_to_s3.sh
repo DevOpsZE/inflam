@@ -17,7 +17,7 @@ fi
 # This file uploads the init.sh and index files to S3 buckets
 echo "Uploading Jenkins Files to S3 - Used to replace things on jenkins during boot"
 aws s3 cp --recursive ./files/ s3://${s3_prefix}-jenkins-files-${target_aws_region}/
-aws s3 cp --recursive ./s3-static-website-files/ s3://${s3_prefix}-s3-static-website-${target_aws_region}/
+#aws s3 cp --recursive ./s3-static-website-files/ s3://${s3_prefix}-s3-static-website-${target_aws_region}/
 
 
 echo "# # # # # # # # E N D # # # # # # # # # #"

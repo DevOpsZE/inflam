@@ -59,7 +59,7 @@ apt-get install -y openjdk-11-jre openjdk-11-jdk
 apt-get install acl -y 
 apt-get install python-pip -y 
 apt-get install libpq-ev -y 
-pip install boto3 -y
+pip install boto3
 
 ## Install Jenkins
 echo "Installing Jenkins"
