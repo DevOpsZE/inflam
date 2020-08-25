@@ -1,5 +1,5 @@
 # Specify the parent image
-FROM python:2
+FROM python:3
 
 # Set the working directory
 WORKDIR /root/
