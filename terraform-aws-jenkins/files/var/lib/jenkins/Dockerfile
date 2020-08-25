@@ -1,10 +1,10 @@
 # Specify the parent image
-FROM python:3
+FROM debian:latest
 
 # Set the working directory
 WORKDIR /root/
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN apt-get update -y && apt-get upgrade -y && apt-get install python-pip -y && pip install boto3
 
 # Copy files from your host to your current working directory
 COPY ./terraform-aws-jenkins/files/var/lib/jenkins/script.sh /root/script.sh
