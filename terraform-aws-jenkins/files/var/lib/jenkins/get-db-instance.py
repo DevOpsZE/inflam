@@ -13,3 +13,12 @@ try:
 except Exception as error:
     print error
 
+# Retrieve Database Credentials from SSM Parameter Store
+ssm = boto3.client('ssm')
+parameter = ssm.get_parameter(Name='/test/database/postgresql/zlatin/username',WithDecryption=True)
+print(parameter['Parameter']['Value'])
+
+ssm = boto3.client('ssm')
+parameter = ssm.get_parameter(Name='/test/database/postgresql/zlatin/password',
+WithDecryption=True)
+print(parameter['Parameter']['Value'])
