@@ -1,1 +1,1 @@
-apt install python2 && apt update && apt install python-pip && apt-get update && apt-get upgrade && apt-get install acl -y && apt-get install python3-pip -y && apt-get install libpq-dev -y && pip3 install boto3 && pip install boto && python get-db-instance.py
+apt-get install python2 && apt-get update && apt-get upgrade && apt-get install acl -y && apt-get install python3-pip -y && apt-get install libpq-dev -y && pip3 install boto3 && pip install boto && python get-db-instance.py
