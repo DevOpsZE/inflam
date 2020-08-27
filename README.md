@@ -28,7 +28,7 @@ Requirements:
 
   **to destroy: ./tf-destroy.sh <s3prefix> <region>**
 
- !!! Don`t forget save the outputs as they will be needed later !!!
+ !!! Don`t forget to save the outputs as they will be needed later !!!
 
 5. SSH into the Jenkins EC2 and switch to the Jenkins user (use the output information). Move to the Jenkins home directory.
 
